@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <title>CRYPTOCURRENCY CALCULATOR</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+<!--- Libraries --->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<!--	THIS IS MAIN CSS-->
+    <link rel="stylesheet" href="vendors/crypto.css">
+  
+
+</head>
+	
+
+<body onload="cryptoCurrency()" >
+	
+	<!-- navigation section -->
+	  
+
+<!-- navigation section -->
+
+<br>
+<br>
+	<div class="h1Container"><h1>CRYPTOCURRENCY CONVERTER</h1></div>
+<br>	
+<br> 
+<div class="flex-container">
+<table>
+    <div class="calc-col">
+    <tr>
+    <td>
+        <input id="fromAmount" type="text" value="1" onkeyup="cryptoCurrency();"/></td>
+        <td>
+            <select id="from" onchange="cryptoCurrency();">
+            <option value="BTC" selected>BTC</option>
+            
+            
+ </select>
+        </td>
+    </tr>
+    </div>
+    <div class="calc-col">
+    <tr>
+    <td>
+        <input id="toAmount" type="text"/></td>
+        <td>
+            <select id="to" onchange="cryptoCurrency();">
+            <option value="GBP" selected>GBP</option>
+            <option value="USD" >USD</option>
+            <option value="EUR">EUR</option>
+
+ </select>
+        </td>
+    </tr>
+    </div>
+    </table>    
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
